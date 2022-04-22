@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+html {
+  background: #1F223D;
+}
+
+body {
+  color: #fff;
+  overflow: hidden;
+}
+
+h1, h2, h3, .clock span, .weather span {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2, h3 {
+  font-size: 2em;
+}
+
+p, li, span, input, button {
+  color: #fff;
+  font-size: 1.1em;
+  font-family: 'Miriam Libre', Arial, Helvetica, sans-serif;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a, i, input, button {
+  transition: all .4s ease-out;
+}
+
+input, button {
+  border: 2px solid transparent;
+  padding: 10px;
+}
+
+button {
+  background: #2e2e2e;
+  border: none;
+  cursor: pointer;
+}
+
+a, a:visited {
+  color:  #f49015;
+  text-decoration: none;
+}
+
+.fa-github, .mail a, .mail a:hover, .mail a:hover i, .email-notice {
+  color: white;
+}
+
+a:hover, .main-links li a:hover, a:hover i {
+  color:#750549;
+}
+
+input:hover, input:active, input:focus {
+  box-shadow: 0px 0px 10px rgba(247, 128, 2, 0.3);
+}
+
+input:active, input:focus, input:focus-visible {
+  border: 2px solid #f49015;
+  outline: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+section.main {
+  width: 65%;
+  background: rgba(8, 2, 26, 0.85);
+  padding: 15px;
+  position: absolute;
+  top: 10vh;
+  left: 17.5%;
+  box-shadow: 0 0 3px #222;
+}
+
+section.main:hover {
+  cursor: move;
+}
+
+section.main div:not(.clock-wrap):not(.search-bar-wrap):hover,
+section.main span {
+  cursor: initial;
+}
+
+.background-img {
+  height: 100%;
+  background: no-repeat center/cover url('../assets/Cyberpunk screenshot.jpg'), rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.background-img > div {
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 0, 60, 0.4);
+}
+
+.info-bar {
+  padding: 0 15px;
+}
+
+.info-bar > div {
+  float: left;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.info-bar .mail {
+  text-align: right;
+}
+
+.mail button {
+  background: rgba(21, 32, 43, 0.7);
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.mail a > button {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.9);
+  padding: 5px 15px;
+}
+
+.mail button:hover {
+  background: rgba(41, 53, 63, 0.7);
+  transform: translateY(-5px);
+}
+
+.mail .email-notice {
+  font-size: 12px;
+  transform: translate(-45%, 25%);
+  background: red;
+  border-radius: 100%;
+  padding: 3px 7px;
+  position: absolute;
+  display: none;
+}
+
+.weather {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.weather i {
+  font-size: 1.2em;
+}
+
+.clock-wrap, .search-bar-wrap {
+  margin: auto;
+  text-align: center;
+}
+
+h1.clock, .date h2 {
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-shadow: 0 4px 5px rgba(255, 255, 255, 0.4)
+}
+
+div.date {
+  margin: auto;
+  padding-top: 10px;
+  width: fit-content;
+}
+
+.search-bar-wrap {
+  padding: 50px 0 0;
+}
+
+.search-btn {
+  background: none;
+  margin-left: -41px;
+  font-size: 1em;
+}
+
+.search-btn:hover {
+  color: #f49015;
+}
+
+.search-bar-wrap input {
+  background: linear-gradient(to left, rgba(21, 32, 43, 0.7), rgb(10, 17, 26, 0.7));
+  font-size: 1em;
+  width: 60%;
+}
+
+.main-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px auto 25px;
+  width: 80%;
+}
+
+.main-links div {
+  background: rgba(21, 32, 43, 0.7);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  width: 300px;
+}
+
+.comfy a {
+  color: #73b073;
+}
+
+.web a {
+  color: #c89f6a;
+}
+
+.entertainment a {
+  color: #508abd;
+}
+
+.links-list {
+  list-style: none;
+  padding: 15px 0;
+}
+
+.fa-youtube {
+  color: #990a0a;
+}
+
+.fa-twitch {
+  color: #a970ff;
+}
+
+.fa-soundcloud {
+  color: #f50;
+}
+
+.fa-firefox-browser {
+  color: #3d7e9a;
+}
+
+.fa-stack-overflow {
+  color: #f48024
+}
+
+.fa-play {
+  color: #4a6448;
+}
+
+.links-list li:last-child .fa-play {
+  color: #bd0303;
+}
