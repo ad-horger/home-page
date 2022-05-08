@@ -86,11 +86,11 @@ section.main {
   box-shadow: 0 0 3px #222;
 }
 
-section.main:hover {
+section.main:hover, div.weather:hover, div.mail:hover {
   cursor: move;
 }
 
-section.main div:not(.clock-wrap):not(.search-bar-wrap):hover,
+section.main div:not(.weather):not(.mail):not(.clock-wrap):not(.search-bar-wrap):hover,
 section.main span {
   cursor: initial;
 }
