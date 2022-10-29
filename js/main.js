@@ -126,11 +126,7 @@ const setWeather = (timePeriod) => {
 
 const handleWindowDrag = () => {
   const el = document.querySelector('section.main');
-  el.querySelectorAll('a, p, i, h2, h3, h4, h5, span, input, button').forEach((childEl) => {
-    childEl.onmousedown = (e) => {
-      e.stopPropagation();
-    }
-  });
+  const dragEl = document.querySelector('div.drag-bar');
 
   if (localStorage.getItem('windowPos')) {
     initialPos = JSON.parse(localStorage.getItem('windowPos'));
@@ -165,8 +161,8 @@ const handleWindowDrag = () => {
     document.onmouseup = closeDragElement;
     document.onmousemove = elementDrag;
   }
-  
-  el.onmousedown = dragMouseDown;
+
+  dragEl.onmousedown = dragMouseDown;
 };
 
 const init = async () => {
