@@ -59,6 +59,7 @@ const setWeather = (timePeriod) => {
       break;
     case 'Partly Sunny':
     case 'Partly Cloudy':
+    case 'Areas Of Smoke':
       weatherIcon = '<i class="fas fa-cloud-sun"></i>';
       break;
     case 'Rain Showers':
@@ -72,6 +73,7 @@ const setWeather = (timePeriod) => {
     case 'Slight Chance Showers And Thunderstorms':
     case 'Slight Chance Thunderstorms':
     case 'Chance Freezing Drizzle':
+    case 'Patchy Drizzle':
     case 'Freezing Drizzle':
       weatherIcon = '<i class="fas fa-cloud-rain"></i>';
       break;
@@ -89,6 +91,7 @@ const setWeather = (timePeriod) => {
       weatherIcon = '<i class="fas fa-cloud-showers-heavy"></i>';
       break;
     case 'Scattered Snow Showers':
+    case 'Snow Showers Likely And Areas Of Blowing Snow':
     case 'Chance Snow Showers':
     case 'Snow Showers Likely':
     case 'Rain And Snow Showers Likely':
